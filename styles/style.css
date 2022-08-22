@@ -3,6 +3,7 @@
   --secondary-text-color: #2e2a86;
   --primary-accent-color: #f797c3;
   --secondary-accent-color: #4045f7;
+  --tertiary-accent-color: #f6f7fc;
 }
 
 /* General */
@@ -36,12 +37,24 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3fr {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-v-center {
+  align-content: center;
+}
+
 .padding-top-sm {
   padding-top: 2.4rem;
 }
 
 .margin-top-sm {
   margin-top: 2.4rem;
+}
+
+.margin-top-m {
+  margin-top: 4.8rem;
 }
 
 .text-color-primary-accent {
@@ -54,8 +67,16 @@ body {
   width: 100%;
 }
 
+.bg-primary-accent {
+  background-color: var(--primary-accent-color);
+}
+
 .bg--secondary-accent {
   background-color: var(--secondary-accent-color);
+}
+
+.bg-tertiary-accent {
+  background-color: var(--tertiary-accent-color);
 }
 
 /* Header */
@@ -168,4 +189,87 @@ h2 {
 .navigation-links-container a:last-child {
   background-color: var(--primary-accent-color);
   padding: 1.4rem 2.8rem;
+}
+
+/*features*/
+
+.features-section {
+  height: 96.4rem;
+  position: relative;
+}
+
+.features-bg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 0;
+}
+
+.features-bg div {
+  flex: 1;
+}
+
+.features-card {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  column-gap: 10rem;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.18px;
+}
+
+.feature-card-img-with-text {
+  width: 100%;
+  position: relative;
+}
+
+.feature-card-img {
+  width: 100%;
+}
+
+.feature-card-img-text {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-text-color);
+  font-size: 4rem;
+}
+
+.feature-card-text {
+  width: 100%;
+}
+
+/* Question section */
+
+.question-section {
+  height: 45rem;
+}
+
+.question-section-content {
+  height: 100%;
+  align-content: center;
+  color: var(--secondary-text-color);
+  column-gap: 8rem;
+}
+
+/*blog section*/
+.blog-section {
+  height: 135rem;
+}
+
+.blog-bg {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-bg div {
+  flex: 1;
 }
