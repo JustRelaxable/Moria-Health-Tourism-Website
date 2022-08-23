@@ -25,7 +25,7 @@ body {
 }
 
 .content {
-  margin: auto;
+  margin: 0 auto;
   width: 140rem;
 }
 
@@ -39,6 +39,10 @@ body {
 
 .grid-3fr {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4fr {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-v-center {
@@ -59,6 +63,10 @@ body {
 
 .text-color-primary-accent {
   color: var(--primary-accent-color);
+}
+
+ul {
+  list-style: none;
 }
 
 /* bg */
@@ -116,6 +124,11 @@ h2 {
   font-weight: 600;
   font-size: 4.8rem;
   line-height: 1.5;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
 }
 
 /* More detail anchor */
@@ -262,14 +275,196 @@ h2 {
 /*blog section*/
 .blog-section {
   height: 135rem;
+  position: relative;
 }
 
 .blog-bg {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 0;
 }
 
 .blog-bg div {
   flex: 1;
+}
+
+.blog-section-info {
+  z-index: 1;
+  position: relative;
+  color: var(--primary-text-color);
+  column-gap: 8rem;
+  align-items: center;
+}
+
+.blog-cards {
+  z-index: 1;
+  position: relative;
+  column-gap: 8rem;
+}
+
+.blog-card-img {
+  width: 100%;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  color: var(--secondary-text-color);
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+/* Photo gallery*/
+.photo-gallery-section {
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13.5rem 0;
+  gap: 6rem;
+}
+
+.photo-gallery-instagram-text {
+  font-size: 2.2rem;
+}
+
+.photo-gallery-photo {
+  width: 100%;
+}
+
+.photo-gallery-photos {
+  column-gap: 3rem;
+}
+
+.photo-gallery-photos img:nth-child(2n) {
+  margin-top: 3rem;
+}
+
+.photo-gallery-text-content {
+  text-align: center;
+}
+
+/*bottom nav*/
+
+.bottom-nav-section {
+}
+
+.bottom-nav-card-header {
+  color: var(--primary-accent-color);
+  font-weight: normal;
+  font-size: 2.4rem;
+}
+
+.bottom-nav-card {
+  color: var(--secondary-text-color);
+}
+
+.bottom-nav-content {
+  grid-template-columns: 1fr 2fr 2fr 2.5fr;
+  padding-top: 14.6rem;
+  grid-column-gap: 13.5rem;
+  padding-bottom: 1.6rem;
+}
+
+.bottom-nav-card-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bottom-nav-card-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bottom-nav-card-contacts-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.email-input-container {
+  border-bottom: 2px solid var(--secondary-text-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.email-input::placeholder {
+  color: var(--secondary-text-color);
+  font-size: 1.8rem;
+}
+
+.email-input {
+  flex: 1;
+  height: 3.6rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  color: var(--secondary-text-color);
+}
+
+.receive-email-input-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.receive-email-checkbox {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.4rem;
+}
+
+.bottom-nav-telephone-number {
+  font-size: 3.4rem;
+}
+
+.bottom-nav-card-menu-links li a {
+  color: var(--secondary-text-color);
+}
+
+.bottom-nav-card-menu-links li a:link {
+  text-decoration: none;
+}
+.bottom-nav-card-menu-links li a:visited {
+  text-decoration: none;
+}
+.bottom-nav-card-menu-links li a:hover {
+  text-decoration: underline var(--secondary-text-color);
+}
+.bottom-nav-card-menu-links li a:active {
+  text-decoration: underline var(--secondary-text-color);
+}
+
+/*footer*/
+
+.footer-section {
+  color: var(--secondary-text-color);
+  padding: 5.4rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  width: 70rem;
+  font-size: 1.6rem;
 }
