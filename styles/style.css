@@ -17,6 +17,7 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  -webkit-text-size-adjust: none;
 }
 
 body {
@@ -418,6 +419,10 @@ h3 {
   color: var(--secondary-text-color);
 }
 
+.email-input-img {
+  width: 2.4rem;
+}
+
 .receive-email-input-container {
   display: flex;
   align-items: flex-start;
@@ -452,6 +457,10 @@ h3 {
   text-decoration: underline var(--secondary-text-color);
 }
 
+.bottom-nav-card-telephone-img {
+  width: 4rem;
+}
+
 /*footer*/
 
 .footer-section {
@@ -468,6 +477,10 @@ h3 {
 .footer-text {
   max-width: 70rem;
   font-size: 1.6rem;
+}
+
+.footer-logo {
+  width: 4rem;
 }
 
 /*Media queries*/
@@ -554,6 +567,10 @@ h3 {
 
   .question-section-content.grid-3fr {
     row-gap: 3rem;
+  }
+
+  .blog-bg .bg-tertiary-accent {
+    flex: 1.5;
   }
 
   .blog-section {
